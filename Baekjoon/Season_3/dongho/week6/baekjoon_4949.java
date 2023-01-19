@@ -20,33 +20,21 @@ public class baekjoon_4949 {
         if (c == '(' || c == '[') {
           s.push(c);
         } else if (c == ')') {
-          // 맞는지 검사
-          if (s.isEmpty()) {
+          if (s.isEmpty() || s.peek() != '(') {
             isBalance = false;
             break;
           }
-          if (s.peek() == '(') {
-            s.pop();
-          } else {
-            isBalance = false;
-            break;
-          }
+          s.pop();
         } else if (c == ']') {
-          // 맞는지 검사
-          if (s.isEmpty()) {
+          if (s.isEmpty() || s.peek() != '[') {
             isBalance = false;
             break;
           }
-          if (s.peek() == '[') {
-            s.pop();
-          } else {
-            isBalance = false;
-            break;
-          }
+          s.pop();
         }
       }
       // 남아있는지 검사
-      if (s.size() != 0) {
+      if (!s.isEmpty()) {
         isBalance = false;
       }
       // 결과 출력
