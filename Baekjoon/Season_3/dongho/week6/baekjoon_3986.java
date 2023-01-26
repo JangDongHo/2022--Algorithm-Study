@@ -13,7 +13,6 @@ public class baekjoon_3986 {
     int N = Integer.parseInt(br.readLine()); // 단어의 수
 
     while (N-- > 0) {
-      boolean isGood = true;
       String word = br.readLine();
       for (int i = 0; i < word.length(); i++) {
         Character alphabet = word.charAt(i);
