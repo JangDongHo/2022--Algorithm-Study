@@ -70,10 +70,6 @@ public class baekjoon4179 {
       }
     }
 
-    for (int d[] : dist1) {
-      System.out.println(Arrays.toString(d));
-    }
-
     // 지훈이에 대한 BFS
     while (!Q2.isEmpty()) {
       Pair cur = Q2.poll();
@@ -83,9 +79,6 @@ public class baekjoon4179 {
         // 범위를 벗어났다는 것은 탈출에 성공했다는 의미
         if (nx < 0 || nx >= n || ny < 0 || ny >= m) {
           System.out.println(dist2[cur.X][cur.Y] + 1);
-          for (int d[] : dist2) {
-            System.out.println(Arrays.toString(d));
-          }
           return;
         }
         if (dist2[nx][ny] >= 0 || board[nx][ny] == '#') continue;
