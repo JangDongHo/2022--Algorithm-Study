@@ -35,7 +35,6 @@ public class baekjoon1697 {
         dist[move] = dist[cur] + 1;
         Q.offer(move);
       }
-      System.out.println(Arrays.toString(dist));
     }
     System.out.println(dist[K]);
   }
