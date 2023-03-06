@@ -92,3 +92,4 @@
 |5주차(01.09~01.15)|5_week|[덱](https://blog.encrypted.gg/935)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md)|
 |6주차(01.16~01.29)|6_week|[스택의 활용(수식의 괄호 쌍)](https://blog.encrypted.gg/936)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md)|
 |7주차(01.30~02.26)|7_week|[BFS](https://blog.encrypted.gg/941)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md)|
+|8주차(03.06~03.12)|8_week|[BFS](https://blog.encrypted.gg/941)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md)|
