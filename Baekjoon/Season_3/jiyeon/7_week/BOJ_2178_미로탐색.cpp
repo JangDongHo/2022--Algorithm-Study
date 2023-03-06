@@ -4,7 +4,7 @@ using namespace std;
 #define Y second
 #define MAX 101
 int board[MAX][MAX];
-bool vis[MAX][MAX];
+int dist[MAX][MAX];
 int dx[4] = {1, 0, -1, 0};
 int dy[4] = {0, 1, 0, -1};
 
@@ -21,8 +21,11 @@ int main(void) {
             board[row-1][col] = num_str.at(col)-'0';
         }
     }
+    for(int row = 0; row < n; row++)
+        for(int col = 0; col < m; col++)
+            dist[row][col]=-1;
     queue<pair<int,int>> Q;
-    vis[0][0] =1;
+    dist[0][0] = 0;
     Q.push({0,0});
     while(!Q.empty()){
         pair<int, int> cur = Q.front();
@@ -31,13 +34,12 @@ int main(void) {
             int nx = cur.X + dx[dir];
             int ny = cur.Y + dy[dir];
             if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-            if(vis[nx][ny] || board[nx][ny]!=1) continue;
-            board[nx][ny] += board[cur.X][cur.Y];
-            vis[nx][ny] = 1;
+            if(dist[nx][ny] >= 0 || board[nx][ny]!=1) continue;
+            dist[nx][ny] = dist[cur.X][cur.Y] + 1;
             Q.push({nx,ny});
         }
     }
 
-    cout << board[n-1][m-1];
+    cout << dist[n-1][m-1]+1;
     return 0;
 }

@@ -14,7 +14,7 @@ int BFS(int row, int col) {
     queue<pair<int,int>> Q;
     vis[row][col] = 1;
     Q.push({row,col});
-    int area = 0;
+    int area = 0; //그림의 넓이
     while(!Q.empty()) {
         area++;
         pair<int,int> cur = Q.front(); 
@@ -45,11 +45,10 @@ int main(void) {
     for(int row = 0; row < n; row++){
         for(int col = 0; col < m; col++){
             if(board[row][col]==0 || vis[row][col]) continue;
-            cnt++;
-            mx = max(mx, BFS(row,col));
+            cnt++;  // 그림의 개수
+            mx = max(mx, BFS(row,col));  //그림의 넓이
         }
     }
-
     cout << cnt << '\n' << mx;
     return 0;
 }
