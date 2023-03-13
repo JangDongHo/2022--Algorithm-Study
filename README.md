@@ -1,8 +1,8 @@
-# 2022-Algorithm-Study 시즌3
+# 2023-Algorithm-Study 시즌3
 
 > 코딩 테스트 준비를 위한 스터디입니다.
 
-- 기간: 2022년 11월 7일 ~ 2023년 2월 30일 (4개월)
+- 기간: 2022년 11월 7일 ~ 2023년 3월 30일 (5개월)
 
 |  월   |   화   |   수   |   목   |   금   | 토  |   일   |
 | :---: | :----: | :----: | :----: | :----: | :-: | :----: |
@@ -90,4 +90,6 @@
 |3주차(12.26~01.01)|3_week|[스택](https://blog.encrypted.gg/933)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md)|
 |4주차(01.02~01.08)|4_week|[큐](https://blog.encrypted.gg/934)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md)|
 |5주차(01.09~01.15)|5_week|[덱](https://blog.encrypted.gg/935)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md)|
-|6주차(01.16~01.22)|6_week|[스택의 활용(수식의 괄호 쌍)](https://blog.encrypted.gg/936)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md)|
+|6주차(01.16~01.29)|6_week|[스택의 활용(수식의 괄호 쌍)](https://blog.encrypted.gg/936)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md)|
+|7주차(01.30~02.26)|7_week|[BFS](https://blog.encrypted.gg/941)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md)|
+|8주차(03.06~03.12)|8_week|[BFS](https://blog.encrypted.gg/941)|[문제](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md)|
