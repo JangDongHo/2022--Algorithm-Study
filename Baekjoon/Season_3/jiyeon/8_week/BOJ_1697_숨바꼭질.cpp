@@ -3,15 +3,15 @@ using namespace std;
 
 #define MAX 100001
 #define MIN 0
-int vis[100001];
+int dist[100001];
 
 int main() {
-    memset(vis, -1, sizeof(vis));
+    memset(dist, -1, sizeof(dist));
 
     int n, k;
     cin >> n >> k;
 
-    vis[n] = 0;
+    dist[n] = 0;
     queue<int> Q;
     Q.push(n);
     while(!Q.empty())
@@ -19,10 +19,10 @@ int main() {
         int cur = Q.front(); Q.pop();
         for(int nx : {cur-1, cur+1, 2*cur}) {
             if(nx < MIN || nx > MAX) continue;
-            if(vis[nx] != -1) continue;
-            vis[nx] = vis[cur] + 1;
+            if(dist[nx] != -1) continue;
+            dist[nx] = dist[cur] + 1;
             Q.push(nx);
         }
     }
-    cout << vis[k];
+    cout << dist[k];
 }

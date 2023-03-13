@@ -51,10 +51,11 @@ int main()
     }
 
     memset(vis, 0, sizeof(vis));
+    
     for(int row = 0; row < n; row++)
         for(int col = 0; col < n; col++)
             if(colorMap[row][col] == 'G') colorMap[row][col] = 'R';
-            
+
     for(int row = 0; row < n; row++) {
         for(int col = 0; col < n; col++) {
             if(vis[row][col] == 1) continue;
